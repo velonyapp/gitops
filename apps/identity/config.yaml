@@ -22,7 +22,7 @@ transport:
 
 data:
   mysql:
-    dsn: "${MYSQL_DSN}"
+    dsn: "velony_identity_app:${MYSQL_PASSWORD}@tcp(10.0.1.119:3306)/velony_identity"
     max_open_connections: 50
     max_idle_connections: 10
     max_connection_lifetime: 1800s
