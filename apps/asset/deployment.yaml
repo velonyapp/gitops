@@ -20,7 +20,7 @@ spec:
         - name: ghcr-pull
       containers:
         - name: asset
-          image: ghcr.io/velonyapp/asset@sha256:617e77edddc2964ee78378b050efcc523f69c2fbca4452dad999ca10d8237a7f
+          image: ghcr.io/velonyapp/asset@sha256:f83b2147b4747004f16628dcf3977d0dee7fbe44efc10753bca2c3217df71d83
           imagePullPolicy: Always
           resources:
             requests:
