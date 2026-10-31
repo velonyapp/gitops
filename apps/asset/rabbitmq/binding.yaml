@@ -14,12 +14,12 @@ spec:
 apiVersion: rabbitmq.com/v1beta1
 kind: Binding
 metadata:
-  name: asset.image.confirm-upload
+  name: asset.image.confirm
 spec:
   source: asset
-  destination: asset.image.confirm-upload
+  destination: asset.image.confirm
   destinationType: queue
-  routingKey: asset.image.confirm-upload
+  routingKey: asset.image.confirm
   rabbitmqClusterReference:
     name: rabbitmq
 ---
@@ -63,12 +63,12 @@ spec:
 apiVersion: rabbitmq.com/v1beta1
 kind: Binding
 metadata:
-  name: asset.image.confirm-upload.dlq
+  name: asset.image.confirm.dlq
 spec:
   source: asset.dlx
-  destination: asset.image.confirm-upload.dlq
+  destination: asset.image.confirm.dlq
   destinationType: queue
-  routingKey: asset.image.confirm-upload.dlq
+  routingKey: asset.image.confirm.dlq
   rabbitmqClusterReference:
     name: rabbitmq
 ---
