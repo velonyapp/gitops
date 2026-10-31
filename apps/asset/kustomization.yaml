@@ -11,10 +11,3 @@ configMapGenerator:
   - name: asset-config
     files:
       - config.yaml
-
-secretGenerator:
-  - name: asset-secret
-    envs:
-      - secret.env
-    options:
-      disableNameSuffixHash: true

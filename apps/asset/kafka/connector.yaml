@@ -16,7 +16,7 @@ spec:
     database.hostname: 10.0.1.119
     database.port: 3306
     database.user: velony_debezium
-    database.password: ${secrets:velony/asset-kafka-secret:MYSQL_PASSWORD}
+    database.password: ${secrets:velony/infrastructure-secret:DEBEZIUM_MYSQL_PASSWORD}
 
     database.server.id: 5411
 

@@ -5,8 +5,3 @@ resources:
   - deployment.yaml
   - pvc.yaml
   - service.yaml
-
-secretGenerator:
-  - name: valkey-secret
-    envs:
-      - secret.env

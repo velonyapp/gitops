@@ -10,8 +10,3 @@ configMapGenerator:
   - name: email-config
     files:
       - config.yaml
-
-secretGenerator:
-  - name: email-secret
-    envs:
-      - secret.env

@@ -4,10 +4,3 @@ kind: Kustomization
 resources:
   - connector.yaml
   - topic.yaml
-
-secretGenerator:
-  - name: asset-kafka-secret
-    envs:
-      - secret.env
-    options:
-      disableNameSuffixHash: true
