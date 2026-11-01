@@ -4,13 +4,17 @@ metadata:
   name: kafbat-ui
 spec:
   replicas: 1
+  revisionHistoryLimit: 3
+
   selector:
     matchLabels:
       app.kubernetes.io/name: kafbat-ui
+
   template:
     metadata:
       labels:
         app.kubernetes.io/name: kafbat-ui
+
     spec:
       containers:
         - name: kafbat-ui
