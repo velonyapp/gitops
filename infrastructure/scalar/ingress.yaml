@@ -11,8 +11,7 @@ spec:
   ingressClassName: traefik
 
   rules:
-    - host: docs.velony.app
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
