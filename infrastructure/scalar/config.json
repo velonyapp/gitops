@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "title": "Asset API",
+      "slug": "asset",
+      "url": "https://raw.githubusercontent.com/velonyapp/asset/dev/openapi.yaml"
+    },
+    {
+      "title": "Identity API",
+      "slug": "identity",
+      "url": "https://raw.githubusercontent.com/velonyapp/identity/dev/openapi.yaml"
+    },
+    {
+      "title": "Email API",
+      "slug": "email",
+      "url": "https://raw.githubusercontent.com/velonyapp/email/dev/openapi.yaml"
+    }
+  ]
+}
