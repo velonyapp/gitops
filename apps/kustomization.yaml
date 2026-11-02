@@ -4,7 +4,6 @@ kind: Kustomization
 namespace: velony
 
 resources:
-  - ingress.yaml
   - identity
   - asset
   - email
