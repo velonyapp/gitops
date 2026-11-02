@@ -4,5 +4,4 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-  - apps.yaml
-  - infrastructure.yaml
+  - application-set.yaml

@@ -1,0 +1,42 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+
+metadata:
+  name: velony
+  namespace: argocd
+
+spec:
+  goTemplate: true
+  goTemplateOptions:
+    - missingkey=error
+
+  generators:
+    - git:
+        repoURL: https://github.com/velonyapp/gitops.git
+        revision: dev
+        directories:
+          - path: apps/*
+          - path: infrastructure/*
+
+  template:
+    metadata:
+      name: "velony-{{ .path.basenameNormalized }}"
+    spec:
+      project: default
+
+      source:
+        repoURL: https://github.com/velonyapp/gitops.git
+        targetRevision: dev
+        path: "{{ .path.path }}"
+
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: velony
+
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+
+        syncOptions:
+          - CreateNamespace=true
