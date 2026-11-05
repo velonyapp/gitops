@@ -4,7 +4,7 @@ kind: Binding
 metadata:
   name: asset.image.create
 spec:
-  source: asset
+  source: app
   destination: asset.image.create
   destinationType: queue
   routingKey: asset.image.create
@@ -16,7 +16,7 @@ kind: Binding
 metadata:
   name: asset.image.confirm
 spec:
-  source: asset
+  source: app
   destination: asset.image.confirm
   destinationType: queue
   routingKey: asset.image.confirm
@@ -28,7 +28,7 @@ kind: Binding
 metadata:
   name: asset.image.process
 spec:
-  source: asset
+  source: app
   destination: asset.image.process
   destinationType: queue
   routingKey: asset.image.process
@@ -40,7 +40,7 @@ kind: Binding
 metadata:
   name: asset.image.delete
 spec:
-  source: asset
+  source: app
   destination: asset.image.delete
   destinationType: queue
   routingKey: asset.image.delete
@@ -53,7 +53,7 @@ kind: Binding
 metadata:
   name: asset.image.create.dlq
 spec:
-  source: asset.dlx
+  source: app.dlx
   destination: asset.image.create.dlq
   destinationType: queue
   routingKey: asset.image.create.dlq
@@ -65,7 +65,7 @@ kind: Binding
 metadata:
   name: asset.image.confirm.dlq
 spec:
-  source: asset.dlx
+  source: app.dlx
   destination: asset.image.confirm.dlq
   destinationType: queue
   routingKey: asset.image.confirm.dlq
@@ -77,7 +77,7 @@ kind: Binding
 metadata:
   name: asset.image.process.dlq
 spec:
-  source: asset.dlx
+  source: app.dlx
   destination: asset.image.process.dlq
   destinationType: queue
   routingKey: asset.image.process.dlq
@@ -89,7 +89,7 @@ kind: Binding
 metadata:
   name: asset.image.delete.dlq
 spec:
-  source: asset.dlx
+  source: app.dlx
   destination: asset.image.delete.dlq
   destinationType: queue
   routingKey: asset.image.delete.dlq

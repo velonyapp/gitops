@@ -7,7 +7,7 @@ spec:
   pattern: "^email\\.send-email$"
   applyTo: quorum_queues
   definition:
-    dead-letter-exchange: email.dlx
+    dead-letter-exchange: app.dlx
     dead-letter-routing-key: email.send-email.dlq
     delivery-limit: 5
     delayed-retry-type: failed

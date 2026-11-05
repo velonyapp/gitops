@@ -2,9 +2,9 @@
 apiVersion: rabbitmq.com/v1beta1
 kind: Exchange
 metadata:
-  name: email
+  name: app
 spec:
-  name: email
+  name: app
   type: direct
   durable: true
   autoDelete: false
@@ -15,9 +15,9 @@ spec:
 apiVersion: rabbitmq.com/v1beta1
 kind: Exchange
 metadata:
-  name: email.dlx
+  name: app.dlx
 spec:
-  name: email.dlx
+  name: app.dlx
   type: direct
   durable: true
   autoDelete: false

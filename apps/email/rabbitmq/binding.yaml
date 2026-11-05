@@ -4,7 +4,7 @@ kind: Binding
 metadata:
   name: email.send-email
 spec:
-  source: email
+  source: app
   destination: email.send-email
   destinationType: queue
   routingKey: email.send-email
@@ -17,7 +17,7 @@ kind: Binding
 metadata:
   name: email.send-email.dlq
 spec:
-  source: email.dlx
+  source: app.dlx
   destination: email.send-email.dlq
   destinationType: queue
   routingKey: email.send-email.dlq
