@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+
+metadata:
+  name: conversation
+  labels:
+    app.kubernetes.io/name: conversation
+    app.kubernetes.io/part-of: velony
+
+spec:
+  ingressClassName: traefik
+
+  rules:
+    - host: api.velony.app
+      http:
+        paths:
+          - path: /v1/conversations
+            pathType: Prefix
+            backend:
+              service:
+                name: conversation
+                port:
+                  number: 80
