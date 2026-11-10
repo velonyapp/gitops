@@ -19,6 +19,9 @@ transport:
     brokers:
       - "kafka-kafka-bootstrap:9092"
     timeout: 10s
+    retry_initial_interval: 1s
+    retry_max_interval: 30s
+    retry_multiplier: 2.0
 
 data:
   mysql:
