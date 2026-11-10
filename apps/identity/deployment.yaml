@@ -27,7 +27,7 @@ spec:
 
       containers:
         - name: identity
-          image: ghcr.io/velonyapp/identity@sha256:38997eed31c4b5f2c5385789ea1476b622dcd9258a330ae156f828b62cfecfc1
+          image: ghcr.io/velonyapp/identity@sha256:7266e6f002ade0d3b03b96de7c4ce986291bc13634b6f76e17d8b19bdd8f4fdb
           imagePullPolicy: Always
 
           resources:
