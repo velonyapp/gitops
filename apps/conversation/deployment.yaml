@@ -27,7 +27,7 @@ spec:
 
       containers:
         - name: conversation
-          image: ghcr.io/velonyapp/conversation@sha256:8ed018c8a5ecb461dfc0cacba171f02283239cac9f350cf38d4f9059a499b6fa
+          image: ghcr.io/velonyapp/conversation@sha256:628aa33a675b9e3f80e45f17ec376741bef14a0da83403583bac95c031c6fa70
           imagePullPolicy: Always
 
           resources:
