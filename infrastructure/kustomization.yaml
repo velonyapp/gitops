@@ -7,3 +7,4 @@ resources:
   - kafka
   - rabbitmq
   - valkey
+  - alloy
