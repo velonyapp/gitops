@@ -27,7 +27,7 @@ spec:
 
       containers:
         - name: email
-          image: ghcr.io/velonyapp/email@sha256:75c7e0e9d0cfbd6dd69f04b270f4353e9f3a8185618010616082dbfb9f043c12
+          image: ghcr.io/velonyapp/email@sha256:13f0f5f3cee16fb54c6c11d3dc8cfce7fc2ae1c8cbfe059c6af9d88bf4a32341
           imagePullPolicy: Always
 
           resources:
