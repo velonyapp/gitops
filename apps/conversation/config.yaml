@@ -37,4 +37,4 @@ telemetry:
     protocol: HTTP_PROTOBUF
     endpoint: https://otlp-gateway-prod-ap-southeast-2.grafana.net/otlp/v1/metrics
     authorization: "${TELEMETRY_AUTHORIZATION}"
-    export_interval: 5s
+    export_interval: 60s
