@@ -27,7 +27,7 @@ spec:
 
       containers:
         - name: asset
-          image: ghcr.io/velonyapp/asset@sha256:be0f7058b918eb7872d43708713d45248f3ec978351e67fd78e7b6dd37b21174
+          image: ghcr.io/velonyapp/asset@sha256:9fd4f092e53daab27f231e4bdaae7c1287ddb4a226b60957413e9676d3d93ae4
           imagePullPolicy: Always
 
           resources:
